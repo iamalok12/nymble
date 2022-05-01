@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "401232816579",
+    "project_id": "nymb-12f19",
+    "storage_bucket": "nymb-12f19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401232816579:android:cf4b8a1c808a6953603576",
+        "android_client_info": {
+          "package_name": "com.example.nymble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401232816579-mo4a96lnsf6ljked4j6hc1i9b6c66vsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nymble",
+            "certificate_hash": "7a96a946f0de4c1ebaf5228feebdb7cabe9a82b1"
+          }
+        },
+        {
+          "client_id": "401232816579-a4j4la90eao6p3dei00j4ee85m8rdi1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOsiAiaL8EbTWZFjZjjCKngm0SK5P9Aok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401232816579-a4j4la90eao6p3dei00j4ee85m8rdi1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

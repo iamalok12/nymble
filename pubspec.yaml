@@ -1,0 +1,41 @@
+name: nymble
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+dependencies:
+  cloud_firestore: ^3.1.13
+  cupertino_icons: ^1.0.4
+  firebase_auth: ^3.3.16
+  firebase_core: ^1.15.0
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.4.0+1
+  get: ^4.6.1
+  google_sign_in: ^5.3.0
+  lottie: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.8.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/lottie/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+    - family: PermanentMarker
+      fonts:
+        - asset: fonts/PermanentMarker-Regular.ttf
