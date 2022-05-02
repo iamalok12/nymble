@@ -1,30 +1,31 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility that Flutter provides. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:get/get.dart';
+import 'package:nymble/presentation_layer/screens/auth_page.dart';
 
-import 'package:nymble/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
-
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  testWidgets ("Auth Page", (WidgetTester tester) async {
+    await tester.pumpWidget(
+        ScreenUtilInit(
+          designSize: const Size(360, 640),
+          minTextAdapt: true,
+          splitScreenMode: true,
+          builder: (_) {
+            return MaterialApp(
+              debugShowCheckedModeBanner: false,
+              theme: ThemeData(fontFamily: "Poppins"),
+              useInheritedMediaQuery: true,
+              home: const GetMaterialApp(
+                home: AuthPage(),
+              ),
+            );
+          },
+        ),
+    );
+    expect(find.text("Nymble"), findsOneWidget);
+    expect(find.text("Skip"), findsOneWidget);
+    expect(find.byType(ElevatedButton), findsOneWidget);
   });
 }
